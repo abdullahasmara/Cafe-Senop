@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Senopaty - Complaint Form</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Form Keluhan Pelanggan</h1>
+    <form id="complaintForm">
+      <label>Nama:</label>
+      <input type="text" id="customerName" required>
+
+      <label>Nomor WhatsApp:</label>
+      <input type="text" id="whatsapp" required>
+
+      <label>Jenis Keluhan:</label><br>
+      <label><input type="radio" name="complaintType" value="Pelayanan" required> Pelayanan</label>
+      <label><input type="radio" name="complaintType" value="Produk"> Produk</label>
+      <label><input type="radio" name="complaintType" value="Kebersihan"> Kebersihan</label>
+      <label><input type="radio" name="complaintType" value="Lainnya"> Lainnya</label><br><br>
+
+      <label>Komentar:</label>
+      <textarea id="comments" required></textarea><br>
+
+      <button type="submit">Kirim Keluhan</button>
+    </form>
+  </div>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
